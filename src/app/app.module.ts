@@ -13,6 +13,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { AlbumsService } from './albums/albums.service';
+import { SecretComponent } from './pages/secret/secret.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { AlbumsService } from './albums/albums.service';
     FooterComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    SecretComponent
   ],
   imports: [
     BrowserModule,
