@@ -33,7 +33,11 @@
                 "input": "src/styles.css"
               }
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.slim.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/holderjs/holder.min.js"
+            ]
           },
           "configurations": {
             "production": {
