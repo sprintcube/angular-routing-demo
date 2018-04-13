@@ -11,9 +11,9 @@ import { AlbumComponent } from './albums/album/album.component';
 import { FooterComponent } from './elements/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { HomeComponent } from './home/home.component';
 import { AlbumsService } from './albums/albums.service';
 import { SecretComponent } from './pages/secret/secret.component';
+import { AlbumDetailsComponent } from './albums/album-details/album-details.component';
 
 
 @NgModule({
@@ -26,8 +26,8 @@ import { SecretComponent } from './pages/secret/secret.component';
     FooterComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent,
-    SecretComponent
+    SecretComponent,
+    AlbumDetailsComponent
   ],
   imports: [
     BrowserModule,
