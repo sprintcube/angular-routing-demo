@@ -15,7 +15,6 @@ private albums: Album[] = [];
 
   ngOnInit() {
     this.albums = this.albumsService.getAlbums();
-    console.log(this.albums);
   }
 
 }
