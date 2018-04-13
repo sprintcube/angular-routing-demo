@@ -1,14 +1,8 @@
 <div class="album py-5 bg-light">
   <div class="container">
     <div class="row">
-      <div class="col-md-4" *ngFor="let album of albums">
-        <app-album></app-album>
-      </div>
-      <div class="col-md-4">
-        <app-album></app-album>
-      </div>
-      <div class="col-md-4">
-        <app-album></app-album>
+      <div class="col-md-4" *ngFor="let albumEl of albums">
+        <app-album [album]="albumEl"></app-album>
       </div>
     </div>
   </div>

@@ -12,22 +12,22 @@ export class AlbumsService {
     this.albums.push({
       id: 1,
       name: 'Birds',
-      description: 'A collection of beautiful photos of birds.',
-      image: 'https://cdn.pixabay.com/photo/2017/03/13/10/25/hummingbird-2139279_640.jpg'
+      description: 'Photos of birds.',
+      image: '/assets/img/birds.jpeg'
     });
 
     this.albums.push({
       id: 2,
       name: 'Mountains',
-      description: 'A collection of beautiful photos of mountains.',
-      image: 'https://cdn.pixabay.com/photo/2018/04/07/01/44/snow-3297561_640.jpg'
+      description: 'Photos of mountains.',
+      image: '/assets/img/mountains.jpeg'
     });
 
     this.albums.push({
       id: 3,
       name: 'Cities',
-      description: 'A collection of beautiful photos of cities.',
-      image: 'https://cdn.pixabay.com/photo/2017/01/18/16/46/hong-kong-1990268_640.jpg'
+      description: 'Photos of cities.',
+      image: '/assets/img/cities.jpeg'
     });
   }
 
