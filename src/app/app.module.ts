@@ -15,6 +15,7 @@ import { AlbumsService } from './albums/albums.service';
 import { SecretComponent } from './pages/secret/secret.component';
 import { AlbumDetailsComponent } from './albums/album-details/album-details.component';
 import { AlbumListComponent } from './albums/album-list/album-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { AlbumListComponent } from './albums/album-list/album-list.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [AlbumsService],
   bootstrap: [AppComponent]

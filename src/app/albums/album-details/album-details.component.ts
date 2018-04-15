@@ -10,6 +10,7 @@ import { Data, ActivatedRoute, Params } from '@angular/router';
 })
 export class AlbumDetailsComponent implements OnInit {
   private album: Album;
+  private photos = <any>[];
 
   constructor(private albumService: AlbumsService,
   private route: ActivatedRoute) { }
@@ -21,7 +22,8 @@ export class AlbumDetailsComponent implements OnInit {
       .subscribe(
         (params: Params) => {
           this.album = this.albumService.getAlbum(+params['id']);
-          console.log(this.album);
+          this.photos = this.albumService.getAlbumPhotos(+params['id'])
+          .subscribe(photos => this.photos = photos);
         }
       );
   }

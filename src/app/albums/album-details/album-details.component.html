@@ -1,13 +1,21 @@
 <div class="album py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-            <img class="img-fluid" src="{{album.image}}" alt="{{album.name}}">
-        </div>
-        <div class="col-md-8">
-            <h2>{{ album.name }}</h2>
-            <p>{{ album.description }}</p>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img class="img-fluid" src="{{album.image}}" alt="{{album.name}}">
+      </div>
+      <div class="col-md-8">
+        <h2>{{ album.name }}</h2>
+        <p>{{ album.description }}</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row" *ngIf="photos.length > 0">
+      <div class="col-md-4" *ngFor="let photoEl of photos">
+        <a href="{{photoEl.pageURL}}" target="_blank">
+          <img class="album-photo" src="{{photoEl.imgUrl}}" alt="Album Photo">
+        </a>
       </div>
     </div>
   </div>
+</div>

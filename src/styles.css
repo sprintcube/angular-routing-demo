@@ -1,3 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import './assets/css/album.css';
+
+.album-photo {
+    margin-bottom: 16px;
+    max-height: 190px;
+    max-width: 340px;
+}
