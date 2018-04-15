@@ -9,8 +9,8 @@ import { Data, ActivatedRoute, Params } from '@angular/router';
   styleUrls: ['./album-details.component.css']
 })
 export class AlbumDetailsComponent implements OnInit {
-  private album: Album;
-  private photos = <any>[];
+  album: Album;
+  photos = <any>[];
 
   constructor(private albumService: AlbumsService,
   private route: ActivatedRoute) { }
