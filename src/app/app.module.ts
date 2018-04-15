@@ -14,6 +14,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AlbumsService } from './albums/albums.service';
 import { SecretComponent } from './pages/secret/secret.component';
 import { AlbumDetailsComponent } from './albums/album-details/album-details.component';
+import { AlbumListComponent } from './albums/album-list/album-list.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { AlbumDetailsComponent } from './albums/album-details/album-details.comp
     AboutComponent,
     ContactComponent,
     SecretComponent,
-    AlbumDetailsComponent
+    AlbumDetailsComponent,
+    AlbumListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,13 @@
-<p>
-  album-details works!
-</p>
+<div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+            <img class="img-fluid" src="{{album.image}}" alt="{{album.name}}">
+        </div>
+        <div class="col-md-8">
+            <h2>{{ album.name }}</h2>
+            <p>{{ album.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
