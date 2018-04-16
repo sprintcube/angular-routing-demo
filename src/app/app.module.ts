@@ -16,6 +16,7 @@ import { SecretComponent } from './pages/secret/secret.component';
 import { AlbumDetailsComponent } from './albums/album-details/album-details.component';
 import { AlbumListComponent } from './albums/album-list/album-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AuthComponent } from './auth/auth.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     SecretComponent,
     AlbumDetailsComponent,
-    AlbumListComponent
+    AlbumListComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
