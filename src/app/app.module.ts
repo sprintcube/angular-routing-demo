@@ -16,6 +16,8 @@ import { SecretComponent } from './pages/secret/secret.component';
 import { AlbumDetailsComponent } from './albums/album-details/album-details.component';
 import { AlbumListComponent } from './albums/album-list/album-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AuthGuard } from './auth.guard';
+import { AuthService } from './auth.service';
 
 
 @NgModule({
@@ -37,7 +39,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [AlbumsService],
+  providers: [AuthGuard, AuthService, AlbumsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
