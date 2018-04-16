@@ -10,6 +10,12 @@ In this demo, following concepts are used.
 * Observables
 * Interfaces
 * Routing
+* Guards
+
+### Protected routes
+In this demo, there is an `AuthGuard` to protect few routes from unauthorized access. To do so, there is a fake authentication service which logs in and out the user.
+
+The album's details page and secret page can not be viewed without login. Simply, click on login button and these 2 routes will be available.
 
 ## Libraries
 This demo uses following third party libraries.
