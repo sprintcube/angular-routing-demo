@@ -5,6 +5,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AlbumDetailsComponent } from './albums/album-details/album-details.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { AlbumListComponent } from './albums/album-list/album-list.component';
+import { SecretComponent } from './pages/secret/secret.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/albums', pathMatch: 'full' },
@@ -17,7 +18,8 @@ const routes: Routes = [
     ]
   },
   { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
+  { path: 'secret', component: SecretComponent }
 ];
 
 @NgModule({
